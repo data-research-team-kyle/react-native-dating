@@ -1,0 +1,12 @@
+import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, TextInput, ListRenderItemInfo } from 'react-native';
+import React, { useState } from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { ScrollView } from 'react-native-virtualized-view';
+import { useTheme } from '@/theme/ThemeProvider';
+import { COLORS, icons, images, SIZES } from '@/constants';
+import { banners, categories, popularProducts } from '@/data';
+import SubHeaderItem from '@/components/SubHeaderItem';
+import Category from '@/components/Category';
+import ProductCard from '@/components/ProductCard';
+import { useNavigation } from 'expo-router';
+import { NavigationProp } from '@react-navigation/native';
